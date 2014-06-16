@@ -20,10 +20,10 @@ to use RDD of Try
 
 to use Implicit def
 
-   scala> val municipalities = sc.textFile("data/municipality_sample").toMunicipality
+    scala> val municipalities = sc.textFile("data/municipality_sample").toMunicipality
 
 tu use DemoReduceByKey
 
-   scala> val grouped = municipalitiesBySizesAndProvinces(municipalities)
-   scala> val reduced = municipalitiesReducing(municipalities)
-   scala> val withAlgebird = municipalitiesSemiGroup(municipalities)
+    scala> val grouped = municipalitiesBySizesAndProvinces(municipalities)
+    scala> val reduced = municipalitiesReducing(municipalities)
+    scala> val withAlgebird = municipalitiesSemiGroup(municipalities)
